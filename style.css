@@ -1,0 +1,222 @@
+:root {
+    font-size : 15px;
+    font-family: 'Roboto', sans-serif;
+    color : tomato;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding : 0;
+}
+
+#cover {
+    height: 100vh;
+    background :#000;
+    font-family: 'Abel', sans-serif;
+    color : #fff;
+    overflow: hidden;
+}
+
+#top-bar{
+    display: flex;
+}
+
+#main-area{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Anton', sans-serif;
+    padding-top: 70px;
+    padding-left : 120px;
+}
+
+#main-area-text{
+    width: 50%;
+}
+
+#main-area-pic{
+    width: 50%;
+}
+
+#name-top{
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    color : tomato;
+}
+
+ ul{
+    width : 100%;
+    display : flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items : center;
+}
+
+li{
+    list-style-type: none;
+    
+}
+#main-text{
+    font-size:5rem;
+}
+
+#main-paragraph{
+    font-size:4rem;
+}
+
+img{
+  height: 65%;
+  display:block;
+  margin:auto;
+}
+
+.btn {
+    background-color: tomato; /* Green */
+    border: none;
+    color: white;
+    padding: 18px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* ####################################################################################### */
+/* ABOUT ME */
+.section{
+    text-align: center;
+    padding : 20px 0 50px 0;
+}
+.row{
+    display : flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.about-item{
+    border: 1px solid slategrey;;
+    width : 20%;
+    padding: 10px 0;
+    color: slategrey;
+}
+ 
+.section-heading{
+    font-size: 2rem;
+}
+
+.icon {
+    font-size: 7rem;
+}
+
+/* ####################################################################################### */
+/* PROTFOLIO */
+#portfolio{
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
+#portfolio .row{
+    display : flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+#portfolio .about-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #fff;
+    height: 200px;
+    margin : 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+ 
+.section-heading{
+    font-size: 2rem;
+}
+
+.icon {
+    font-size: 7rem;
+}
+
+.section img{
+    width: 100%;
+    height: 100%;
+}
+/* ####################################################################################### */
+/* CONTACT */
+
+#contact .icon {
+    font-size: 2rem;
+    color : slategray;
+    margin: 0 20px;
+}
+
+#contact .icon-grp{   
+    display : flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 1200px){
+    #main-paragraph{
+        font-size:3rem;
+    }
+    #portfolio .about-item{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 910px){
+    :root{
+        font-size : 12px;
+    }
+    #main-paragraph{
+        font-size:3.5rem;
+    }
+    #portfolio .about-item{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 616px){
+    #main-paragraph{
+        font-size:3rem;
+    }
+    #main-area{
+        padding-top: 70px;
+        padding-left : 40px;
+    }
+    #portfolio .about-item{
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 480px){
+    #main-area-pic{
+        display: none;
+    }
+    #main-area-text{
+        padding-top: 70px;
+        width: 100%;
+    }
+    #name-top{
+        display: none;
+    }
+    .row{
+        display : flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-item{
+        width : 70%;
+        padding: 10px 0;
+        color: slategrey;
+        margin-bottom: 10px;
+    }
+}
