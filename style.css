@@ -178,9 +178,6 @@ img{
 
 /* media queries */
 @media only screen and (max-width: 1200px){
-    #name-top{
-        color : yellow;
-    }
     #main-paragraph{
         font-size:3rem;
     }
@@ -193,9 +190,6 @@ img{
     :root{
         font-size : 12px;
     }
-    #name-top{
-        color : green;
-    }
     #portfolio .item{
         height: 100px;
     }
@@ -204,9 +198,6 @@ img{
 @media only screen and (min-width: 480px) and (max-width: 616px){
     :root{
         font-size : 10px;
-    }
-    #name-top{
-        color : pink;
     }
     #main-area{
         padding-top: 70px;
@@ -219,9 +210,6 @@ img{
 
 /* At mobile size remove image and stack section items */
 @media only screen and (max-width: 480px){
-    #name-top{
-        color : brown;
-    }
     :root{
         font-size : 10px;
     }
