@@ -9,143 +9,158 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Lobster" rel="stylesheet">
     <!-- external style sheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
 </head>
 <body>
-    
-    <!-- main covers starts here -->
-    <div id="cover">
-        <!-- top bar starts here -->
-        <div id="top-bar">
-            <ul>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#portfolio">WORK</a></li>
-                <li id="name-top">Saurav Ganguly</li>
-                <li><a href="https://medium.com/@webdevelopersaurav" target="_blank">BLOG</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-        <!-- top bar ends -->
-        <!-- main area starts here -->
-        <div id="main-area">
-            <!-- main area text -->
-            <div id="main-area-text">
-                <span id="main-text">Hi! <br/></span>
-                <span id="main-paragraph">I am Saurav. <br/> I am a budding <br/> full stack developer. <br></span>
-                <div><a href="#skills" class="btn">Know More</a></div>
-            </div>
-            <!-- main area text ends-->
-            <!-- main area image -->
-            <div id="main-area-pic">
-                    <img src="img/myPic.png" alt="">
-            </div>
-            <!-- main area image ends -->
-        </div>
-        <!-- main area ends here -->
-    </div>
-    <!-- main covers ends here -->
-    <!-- skill section starts here -->
-    <div class="section" id="skills">
-        <!-- skill section heading -->
-        <div class="section-heading">
-            <h1>Skills</h1>
-        </div>    
-        <!-- skill section heading ends--> 
-        <!-- skill section items -->
-        <div class="row">
-                <div class="item">
-                    <div class="icon">
-                        <i class="fab fa-html5"></i>
+    <div class="se-pre-con"></div>
+    <div id="entire-website">
+            <!-- main covers starts here -->
+        <div id="cover">
+                <!-- top bar starts here -->
+                <div id="top-bar">
+                    <ul>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#portfolio">WORK</a></li>
+                        <li id="name-top">Saurav Ganguly</li>
+                        <li><a href="https://medium.com/@webdevelopersaurav" target="_blank">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- top bar ends -->
+                <!-- main area starts here -->
+                <div id="main-area">
+                    <!-- main area text -->
+                    <div id="main-area-text">
+                        <span id="main-text">Hi! <br/></span>
+                        <span id="main-paragraph">I am Saurav. <br/> I am a budding <br/> full stack developer. <br></span>
+                        <div><a href="#skills" class="btn">Know More</a></div>
                     </div>
-                    <p>HTML5</p>
+                    <!-- main area text ends-->
+                    <!-- main area image -->
+                    <div id="main-area-pic">
+                            <img src="img/myPic.png" alt="">
+                    </div>
+                    <!-- main area image ends -->
                 </div>
-                <div class="item">
-                        <div class="icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <p>CSS</p>
-                </div>
-                <div class="item">
-                        <div class="icon">
-                            <i class="fab fa-js"></i> 
-                        </div>
-                        <p>Javascript</p> 
-                </div>
-                <div class="item">
-                        <div class="icon">
-                            <i class="fab fa-git"></i>
-                        </div>
-                        <p>GIT</p>
-                </div>
-        </div>
-        <!-- skill section items ends -->
-    </div>
-    <!-- skill section ends here -->
-    <!-- portfolio section starts here -->
-    <div class="section" id="portfolio">
-            <!-- portfolio section heading -->
-            <div class="section-heading">
-                    <h1>My Work</h1>
+                <!-- main area ends here -->
+            </div>
+            <!-- main covers ends here -->
+            <!-- skill section starts here -->
+            <div class="section" id="skills">
+                <!-- skill section heading -->
+                <div class="section-heading">
+                    <h1>Skills</h1>
                 </div>    
-            <!-- portfolio section heading ends-->
-             <!-- portfolio section items -->    
+                <!-- skill section heading ends--> 
+                <!-- skill section items -->
                 <div class="row">
                         <div class="item">
-                            <img src="img/portfolio.png" alt="">
+                            <div class="icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <p>HTML5</p>
                         </div>
                         <div class="item">
-                                <p>Coming soon..</p>
+                                <div class="icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <p>CSS</p>
                         </div>
                         <div class="item">
-                                <p>Coming soon..</p> 
-                        </div>
-                </div>
-                <div class="row">        
-                        <div class="item">
-                                <p>Coming soon..</p>
+                                <div class="icon">
+                                    <i class="fab fa-js"></i> 
+                                </div>
+                                <p>Javascript</p> 
                         </div>
                         <div class="item">
-                                <p>Coming soon..</p>
+                                <div class="icon">
+                                    <i class="fab fa-git"></i>
+                                </div>
+                                <p>GIT</p>
                         </div>
-                        <div class="item">
-                                <p>Coming soon..</p>
-                        </div>
                 </div>
-            <!-- portfolio section items ends-->       
-    </div>
-    <!-- portfolio section ends here -->
-    <!-- contact sections starts -->
-    <div class="section" id="contact">
-        <!-- contact section heading -->
-            <div class="section-heading">
-                <h1>Contact Me</h1>
-            </div>  
-        <!-- contact section heading ends-->   
-        <!-- contact section items -->    
-            <div class="icon-grp">
-                <div class="icon">
-                    <a href="#">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>    
-                </div>
-                <div class="icon">
-                    <a href="https://github.com/webDevSaurav" target="_blank"> 
-                        <i class="fab fa-github-square"></i>
-                    </a>    
-                </div>
-                <div class="icon">
-                    <a href="#" >
-                        <i class="fab fa-linkedin"></i>
-                    </a>    
-                </div>
-                <div class="icon">
-                    <a href="https://www.freecodecamp.org/saurav1993" target="_blank">
-                        <i class="fab fa-free-code-camp"></i>
-                    </a>    
-                </div>  
+                <!-- skill section items ends -->
             </div>
-        <!-- contact section items ends -->        
-        </div>
-        <!-- contact sections ends -->
+            <!-- skill section ends here -->
+            <!-- portfolio section starts here -->
+            <div class="section" id="portfolio">
+                    <!-- portfolio section heading -->
+                    <div class="section-heading">
+                            <h1>My Work</h1>
+                        </div>    
+                    <!-- portfolio section heading ends-->
+                    <!-- portfolio section items -->    
+                        <div class="row">
+                                <div class="item">
+                                    <img src="img/portfolio.png" alt="">
+                                </div>
+                                <div class="item">
+                                        <p>Coming soon..</p>
+                                </div>
+                                <div class="item">
+                                        <p>Coming soon..</p> 
+                                </div>
+                        </div>
+                        <div class="row">        
+                                <div class="item">
+                                        <p>Coming soon..</p>
+                                </div>
+                                <div class="item">
+                                        <p>Coming soon..</p>
+                                </div>
+                                <div class="item">
+                                        <p>Coming soon..</p>
+                                </div>
+                        </div>
+                    <!-- portfolio section items ends-->       
+            </div>
+            <!-- portfolio section ends here -->
+            <!-- contact sections starts -->
+            <div class="section" id="contact">
+                <!-- contact section heading -->
+                    <div class="section-heading">
+                        <h1>Contact Me</h1>
+                    </div>  
+                <!-- contact section heading ends-->   
+                <!-- contact section items -->    
+                    <div class="icon-grp">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>    
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/webDevSaurav" target="_blank"> 
+                                <i class="fab fa-github-square"></i>
+                            </a>    
+                        </div>
+                        <div class="icon">
+                            <a href="#" >
+                                <i class="fab fa-linkedin"></i>
+                            </a>    
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.freecodecamp.org/saurav1993" target="_blank">
+                                <i class="fab fa-free-code-camp"></i>
+                            </a>    
+                        </div>  
+                    </div>
+                <!-- contact section items ends -->        
+                </div>
+                <!-- contact sections ends -->
+    </div>
+    
 
     
     <!-- fontawesome icons are included     -->
