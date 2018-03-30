@@ -1,7 +1,5 @@
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
+
+/* this is for the loader  */
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
 	position: fixed;
@@ -12,6 +10,7 @@ if it's not present, don't show loader */
 	z-index: 9999;
 	background: url(img/ajax-loader.gif) center no-repeat #000;
 }
+/* loader style ends */
 
 /* RESET VALUES */
 :root {
