@@ -1,3 +1,4 @@
+/* RESET VALUES */
 :root {
     font-size : 15px;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +10,31 @@ html, body {
     padding : 0;
 }
 
+a { 
+    color: inherit;
+    text-decoration: none; 
+    padding : 10px 20px;
+} 
+
+a:hover {
+    background: white;
+    color : #000;
+}
+
+ul{
+    width : 100%;
+    display : flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items : center;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* MAIN COVER SECTION */
+
 #cover {
     height: 100vh;
     background :#000;
@@ -19,6 +45,12 @@ html, body {
 
 #top-bar{
     display: flex;
+}
+
+#name-top{
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    color : tomato;
 }
 
 #main-area{
@@ -37,24 +69,11 @@ html, body {
     width: 50%;
 }
 
-#name-top{
-    font-size: 2rem;
-    font-family: 'Lobster', cursive;
-    color : tomato;
+#main-area-text a:hover{
+    background: tomato;
+    color : inherit;
 }
 
- ul{
-    width : 100%;
-    display : flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items : center;
-}
-
-li{
-    list-style-type: none;
-    
-}
 #main-text{
     font-size:5rem;
 }
@@ -80,8 +99,7 @@ img{
     font-size: 16px;
 }
 
-/* ####################################################################################### */
-/* ABOUT ME */
+/* PORTFOLIO */
 .section{
     text-align: center;
     padding : 20px 0 50px 0;
@@ -92,7 +110,7 @@ img{
     justify-content: space-around;
 }
 
-.about-item{
+.item{
     border: 1px solid slategrey;;
     width : 20%;
     padding: 10px 0;
@@ -107,7 +125,6 @@ img{
     font-size: 7rem;
 }
 
-/* ####################################################################################### */
 /* PROTFOLIO */
 #portfolio{
     background: #000;
@@ -120,7 +137,7 @@ img{
     justify-content: space-evenly;
 }
 
-#portfolio .about-item{
+#portfolio .item{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +160,7 @@ img{
     width: 100%;
     height: 100%;
 }
-/* ####################################################################################### */
+
 /* CONTACT */
 
 #contact .icon {
@@ -159,46 +176,60 @@ img{
 }
 
 
-
-
-
 /* media queries */
 @media only screen and (max-width: 1200px){
+    #name-top{
+        color : yellow;
+    }
     #main-paragraph{
         font-size:3rem;
     }
-    #portfolio .about-item{
+    #portfolio .item{
         height: 150px;
     }
 }
 
-@media only screen and (max-width: 910px){
+@media only screen and (min-width: 616px) and (max-width: 910px){
     :root{
         font-size : 12px;
     }
-    #main-paragraph{
-        font-size:3.5rem;
+    #name-top{
+        color : green;
     }
-    #portfolio .about-item{
+    #portfolio .item{
         height: 100px;
     }
 }
 
-@media only screen and (max-width: 616px){
-    #main-paragraph{
-        font-size:3rem;
+@media only screen and (min-width: 480px) and (max-width: 616px){
+    :root{
+        font-size : 10px;
+    }
+    #name-top{
+        color : pink;
     }
     #main-area{
         padding-top: 70px;
         padding-left : 40px;
     }
-    #portfolio .about-item{
+    #portfolio .item{
         height: 100px;
     }
 }
+
+/* At mobile size remove image and stack section items */
 @media only screen and (max-width: 480px){
+    #name-top{
+        color : brown;
+    }
+    :root{
+        font-size : 10px;
+    }
     #main-area-pic{
         display: none;
+    }
+    #main-area{
+        padding-left : 70px;
     }
     #main-area-text{
         padding-top: 70px;
@@ -213,10 +244,13 @@ img{
         justify-content: center;
         align-items: center;
     }
-    .about-item{
+    .item{
         width : 70%;
         padding: 10px 0;
         color: slategrey;
         margin-bottom: 10px;
+    }
+    #contact .icon {
+        margin: 0 10px;
     }
 }
