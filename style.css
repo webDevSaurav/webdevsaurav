@@ -161,7 +161,12 @@ img{
     font-size: 1.5rem;
     color: #fff;
 }
- 
+
+#portfolio a:hover {
+    background: #000;
+    text-decoration: none;
+    padding : 0;
+}
 .section-heading{
     font-size: 2rem;
 }
