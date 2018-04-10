@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
@@ -9,161 +10,279 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Lobster" rel="stylesheet">
+    <!-- Animate CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- fontawesome icons are included     -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-     <!-- add a loader before the page fully loads -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-     <script>
-         // Wait for window load
-         $(window).load(function() {
-             // Animate loader off screen
-             $(".se-pre-con").fadeOut("slow");;
-         });
-     </script>
-     <!-- loader script ends -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- add a loader before the page fully loads -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script>
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+            //wow js init
+            new WOW().init();
+        });
+
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <!-- loader script ends -->
 
 </head>
+
 <body>
     <div class="se-pre-con"></div>
     <div id="entire-website">
-            <!-- main covers starts here -->
+        <!-- main covers starts here -->
         <div id="cover">
-                <!-- top bar starts here -->
-                <div id="top-bar">
-                    <ul>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#portfolio">WORK</a></li>
-                        <li id="name-top">Saurav Ganguly</li>
-                        <li><a href="https://medium.com/@webdevelopersaurav" target="_blank">BLOG</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-                <!-- top bar ends -->
-                <!-- main area starts here -->
-                <div id="main-area">
-                    <!-- main area text -->
-                    <div id="main-area-text">
-                        <span id="main-text">Hi! <br/></span>
-                        <span id="main-paragraph">I am Saurav. <br/> I am a budding <br/> full stack developer. <br></span>
-                        <div><a href="#skills" class="btn">Know More</a></div>
-                    </div>
-                    <!-- main area text ends-->
-                    <!-- main area image -->
-                    <div id="main-area-pic">
-                            <img src="img/myPic.png" alt="">
-                    </div>
-                    <!-- main area image ends -->
-                </div>
-                <!-- main area ends here -->
+            <!-- top bar starts here -->
+            <div id="top-bar">
+                <ul>
+                    <li>
+                        <a href="#skills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">WORK</a>
+                    </li>
+                    <li id="name-top" class="animated zoomIn">Saurav Ganguly</li>
+                    <li>
+                        <a href="https://medium.com/@webdevelopersaurav" target="_blank">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-            <!-- main covers ends here -->
-            <!-- skill section starts here -->
-            <div class="section" id="skills">
-                <!-- skill section heading -->
-                <div class="section-heading">
-                    <h1>Skills</h1>
-                </div>    
-                <!-- skill section heading ends--> 
-                <!-- skill section items -->
-                <div class="row">
-                        <div class="item">
-                            <div class="icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <p>HTML5</p>
-                        </div>
-                        <div class="item">
-                                <div class="icon">
-                                    <i class="fab fa-css3-alt"></i>
-                                </div>
-                                <p>CSS</p>
-                        </div>
-                        <div class="item">
-                                <div class="icon">
-                                    <i class="fab fa-js"></i> 
-                                </div>
-                                <p>Javascript</p> 
-                        </div>
-                        <div class="item">
-                                <div class="icon">
-                                    <i class="fab fa-git"></i>
-                                </div>
-                                <p>GIT</p>
-                        </div>
-                </div>
-                <!-- skill section items ends -->
-            </div>
-            <!-- skill section ends here -->
-            <!-- portfolio section starts here -->
-            <div class="section" id="portfolio">
-                    <!-- portfolio section heading -->
-                    <div class="section-heading">
-                            <h1>My Work</h1>
-                        </div>    
-                    <!-- portfolio section heading ends-->
-                    <!-- portfolio section items -->    
-                        <div class="row">
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="img/portfolio.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="https://webdevsaurav.github.io/whatsapp-ui/" target="blank">
-                                        <img src="img/whatsapp-ui.PNG" alt=""> 
-                                    </a>
-                                </div>
-                                <div class="item">
-                                        <p>Coming soon..</p> 
-                                </div>
-                        </div>
-                        <div class="row">        
-                                <div class="item">
-                                        <p>Coming soon..</p>
-                                </div>
-                                <div class="item">
-                                        <p>Coming soon..</p>
-                                </div>
-                                <div class="item">
-                                        <p>Coming soon..</p>
-                                </div>
-                        </div>
-                    <!-- portfolio section items ends-->       
-            </div>
-            <!-- portfolio section ends here -->
-            <!-- contact sections starts -->
-            <div class="section" id="contact">
-                <!-- contact section heading -->
-                    <div class="section-heading">
-                        <h1>Contact Me</h1>
-                    </div>  
-                <!-- contact section heading ends-->   
-                <!-- contact section items -->    
-                    <div class="icon-grp">
-                        <div class="icon">
-                            <a href="#">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>    
-                        </div>
-                        <div class="icon">
-                            <a href="https://github.com/webDevSaurav" target="_blank"> 
-                                <i class="fab fa-github-square"></i>
-                            </a>    
-                        </div>
-                        <div class="icon">
-                            <a href="#" >
-                                <i class="fab fa-linkedin"></i>
-                            </a>    
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.freecodecamp.org/saurav1993" target="_blank">
-                                <i class="fab fa-free-code-camp"></i>
-                            </a>    
-                        </div>  
+            <!-- top bar ends -->
+            <!-- main area starts here -->
+            <div id="main-area">
+                <!-- main area text -->
+                <div id="main-area-text" class="animated fadeInLeft">
+                    <span id="main-text">Hi!
+                        <br/>
+                    </span>
+                    <span id="main-paragraph">I am Saurav.
+                        <br/> I am a budding
+                        <br/> full stack developer.
+                        <br>
+                    </span>
+                    <div>
+                        <a href="#skills" class="btn animated shake" id="KnwMoreBtn">Know More</a>
                     </div>
-                <!-- contact section items ends -->        
                 </div>
-                <!-- contact sections ends -->
+                <!-- main area text ends-->
+                <!-- main area image -->
+                <div id="main-area-pic" class="animated fadeInRight">
+                    <img src="img/myPic.png" class="animated pulse">
+                </div>
+                <!-- main area image ends -->
+            </div>
+            <!-- main area ends here -->
+        </div>
+        <!-- main covers ends here -->
+        <!-- skill section starts here -->
+        <div class="section" id="skills">
+            <!-- skill section heading -->
+            <div class="section-heading">
+                <h1 class="wow bounceInUp">Skills</h1>
+            </div>
+            <!-- skill section heading ends-->
+            <!-- skill section items -->
+            <div class="row">
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-html5-plain"></i>
+                    </div>
+                    <p>HTML5</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-css3-plain"></i>
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-javascript-plain"></i>
+                    </div>
+                    <p>Javascript</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-jquery-plain"></i>
+                    </div>
+                    <p>jquery</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-bootstrap-plain"></i>
+                    </div>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-typescript-plain"></i>
+                    </div>
+                    <p>TypeScript</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-angularjs-plain"></i>
+                    </div>
+                    <p>Angular</p>
+                </div>
+                <div class="item wow zoomIn">
+                    <div class="icon">
+                        <i class="devicon-git-plain"></i>
+                    </div>
+                    <p>GIT</p>
+                </div>
+            </div>
+            <!-- skill section items ends -->
+        </div>
+        <!-- skill section ends here -->
+        <!-- portfolio section starts here -->
+        <div class="section" id="portfolio">
+            <!-- portfolio section heading -->
+            <div class="section-heading">
+                <h1 class="wow bounceInUp">My Work</h1>
+            </div>
+            <!-- portfolio section heading ends-->
+            <!-- portfolio section items -->
+            <div class="row">
+                <ul class="demo-3 wow zoomIn">
+                    <a href="#">
+                        <li>
+                            <figure>
+                                <img src="img/portfolio.png" alt="" />
+                                <figcaption>
+                                    <h2>Portfolio Website</h2>
+                                    <p>About : My personal portfolio page showcasing my skills
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="demo-3 wow zoomIn">
+                    <a href="https://webdevsaurav.github.io/whatsapp-ui/" target="blank">
+                        <li>
+                            <figure>
+                                <img src="img/whatsapp-ui.PNG" alt="" />
+                                <figcaption>
+                                    <h2>whatsapp-ui design</h2>
+                                    <p>About : Cloaning of the watsapp UI using Bootstrap 4
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+
+                </ul>
+                <ul class="demo-3 wow zoomIn">
+                    <a href="https://codepen.io/saurav1993/full/OvjMEL/" target="blank">
+                        <li>
+                            <figure>
+                                <img src="img/loan-calc.PNG" alt="" />
+                                <figcaption>
+                                    <h2>Loan Calculator</h2>
+                                    <p>About : A simple loan calculator made in vanilla javascript</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="demo-3 wow zoomIn">
+                    <a href="https://codepen.io/saurav1993/full/rdybwv/" target="blank">
+                        <li>
+                            <figure>
+                                <img src="img/todo-list.PNG" alt="" />
+                                <figcaption>
+                                    <h2>To-Do list</h2>
+                                    <p>About : A to-do list made in vanilla javascript and materialize using local storage
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="demo-3 wow zoomIn">
+                    <a href="https://codepen.io/saurav1993/full/dzJrKG/" target="blank">
+                        <li>
+                            <figure>
+                                <img src="img/randon-quotes.PNG" alt="" />
+                                <figcaption>
+                                    <h2>Randon Quotes Generator</h2>
+                                    <p>About : Using jquery and ajax functionality it fetches random quotes from an api
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+
+                </ul>
+                <ul class="demo-3 wow zoomIn">
+                    <a href="https://codepen.io/saurav1993/full/xLJqPm/" target="blank">
+                        <li>
+                            <figure>
+                                <img src="img/mp3-tube.PNG" alt="" />
+                                <figcaption>
+                                    <h2>MP3-tube</h2>
+                                    <p>About : Used Jquery Mobile to make a mobile interface to search songs using youtube api</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- portfolio section items ends-->
+        </div>
+        <!-- portfolio section ends here -->
+        <!-- contact sections starts -->
+        <div class="section" id="contact">
+            <!-- contact section heading -->
+            <div class="section-heading">
+                <h1 class="wow bounceInUp">Contact Me</h1>
+            </div>
+            <!-- contact section heading ends-->
+            <!-- contact section items -->
+            <div class="icon-grp wow shake">
+                <div class="icon">
+                    <a href="#">
+                        <i class="devicon-facebook-plain"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/webDevSaurav" target="_blank">
+                        <i class="devicon-github-plain"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.freecodecamp.org/saurav1993" target="_blank">
+                        <i class="fab fa-free-code-camp"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- contact section items ends -->
+        </div>
+        <!-- contact sections ends -->
     </div>
 </body>
+
 </html>
